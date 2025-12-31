@@ -6,7 +6,7 @@
 ---
 
 ### 🧐 About Me
-I am currently a Computer Engineering student at **UIT** (GPA: **8.41/10**). My passion is bypassing abstraction layers (HAL/libraries) to build drivers and kernels from scratch, ensuring total system control and optimization.
+I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.41/10**). My passion is bypassing abstraction layers (HAL/libraries) to build drivers and kernels from scratch, ensuring total system control and optimization.
 
 - 🔭 **Current Focus:** Developing bare-metal drivers for STM32 and multi-core RTOS systems on ESP32.
 - 🌱 **Core Philosophy:** Deep understanding of Computer Architecture & Memory Management > Relying on APIs.
