@@ -23,13 +23,13 @@ I am currently a Computer Engineering student at **UIT** (GPA: **8.41/10**). My 
 
 ### 🔥 Featured Projects (Under Development)
 
-#### 1. [Custom Bootloader & Bare-metal Drivers (STM32)](?)
+#### 1. [Custom Bootloader & Bare-metal Drivers (STM32)](https://github.com/1811htsang/Custom-Bootloader-Bare-metal-Drivers-on-STM32F103C8T6.git)
 > *Challenges: No HAL libraries, Registry Manipulation, Manual Clock Configuration.*
 *   **Architected** a lightweight Bootloader enabling firmware updates via **UART (XMODEM)**.
 *   **Developed** GPIO, USART, and TIM drivers from scratch using pure C and direct register access.
 *   **Analyzed** datasheets and reference manuals to configure clock trees and bus frequencies manually, ensuring precise timing for communication protocols.
 
-#### 2. [High-Frequency Data Acquisition (ESP32)](?)
+#### 2. [High-Frequency Data Acquisition (ESP32)](https://github.com/1811htsang/High-Frequency-Audio-Data-Acquisition-using-ESP32-WROOM-32.git)
 > *Challenges: Dual-core synchronization, 100ksps Sampling, Zero CPU overhead.*
 *   **Engineered** a real-time audio sampling system using **I2S & DMA**.
 *   **Orchestrated** heterogeneous multi-core processing with **FreeRTOS** (Core 0: Wi-Fi, Core 1: DSP).
