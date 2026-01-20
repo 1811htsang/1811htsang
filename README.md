@@ -23,10 +23,10 @@ I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.41/10*
 
 ### 🔥 Featured Projects (Under Development)
 
-#### 1. [Custom Bootloader & Bare-metal Drivers (STM32)](https://github.com/1811htsang/Custom-Bootloader-Bare-metal-Drivers-on-STM32F103C8T6.git)
-> *Challenges: No HAL libraries, Registry Manipulation, Manual Clock Configuration.*
+#### 1. [Field-Serviceable Smart Power Monitor (STM32)](https://github.com/1811htsang/Field-Serviceable-Smart-Power-Monitor-using-STM32F103C8T6.git)
+> *Challenges: No HAL libraries, Registry Manipulation, Manual Clock Configuration, Fail-Safe Handling.*
 *   **Architected** a lightweight Bootloader enabling firmware updates via **UART (XMODEM)**.
-*   **Developed** GPIO, USART, and TIM drivers from scratch using pure C and direct register access.
+*   **Developed** GPIO, USART, IWDG, WWDG, RCC and TIM drivers from scratch using pure C and direct register access.
 *   **Analyzed** datasheets and reference manuals to configure clock trees and bus frequencies manually, ensuring precise timing for communication protocols.
 
 #### 2. [High-Frequency Data Acquisition (ESP32)](https://github.com/1811htsang/High-Frequency-Audio-Data-Acquisition-using-ESP32-WROOM-32.git)
