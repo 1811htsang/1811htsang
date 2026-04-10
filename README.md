@@ -40,6 +40,17 @@ I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10*
 * **Developed** a robust hardware front-end incorporating **TL072 Op-amps**, **MAX9812**, **PJ-313B**, **TCT40-16R**, and **PCM1808** to process differential signals from industrial bearings (2000 RPM reference).
 * **Engineered** power-efficient routines for battery operation (8-hour minimum) with integrated charging management and state-of-charge (SoC) monitoring.
 
+#### 3. [OTA Software Update Solution with DFU and P2P Scenario Design for End Users](https://github.com/1811htsang/OTA-Software-Update-Solution-with-DFU-and-P2P-Scenario-Design-for-End-Users.git)
+> *Challenges: Peer-to-Peer (P2P) firmware distribution, Flash Memory Management, Bandwidth Optimization for IoT.*
+
+* **Developed** a comprehensive **Over-The-Air** (OTA) update system utilizing **Device Firmware Update** (DFU) protocols to enable seamless wireless software enhancements.
+
+* **Design** a specialized **Peer-to-Peer** (P2P) update scenario where updated devices act as local sources to distribute 1MB firmware packages to neighboring targets, significantly reducing cloud bandwidth reliance.
+
+* **Optimized** memory architecture for embedded targets, incorporating a **Safe Rollback mechanism** to restore the previous stable version in case of update failure or system instability.
+
+* **Designed** a user-centric management workflow, bridging the gap between **Servers**, **Gateways**, and **end-user IoT devices** through standardized communication.
+
 ---
 
 ### 📫 Connect with me
