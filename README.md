@@ -1,15 +1,15 @@
 # Hi there, I'm Huynh Thanh Sang (Shang Huang) 👋
 
 ### 🚀 Embedded Software / Firmware Engineer
-**"I don't just write code; I decode the interaction between software and electrical signals."**
+**"I don't just write code; I design a complete embedded product with a full process from schematic design and PCB to software architecture development."**
 
 ---
 
 ### 🧐 About Me
-I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.41/10**). My passion is bypassing abstraction layers (HAL/libraries) to build drivers and kernels from scratch, ensuring total system control and optimization.
+I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10**). My passion is mastering the entire process and complex engineering steps to perfect products and solve real-world problems.
 
-- 🔭 **Current Focus:** Developing bare-metal drivers for STM32 and multi-core RTOS systems on ESP32.
-- 🌱 **Core Philosophy:** Deep understanding of Computer Architecture & Memory Management > Relying on APIs.
+- 🔭 **Current Focus:** Developing bare-metal drivers for STM32, multi-core RTOS systems on ESP32; Designing custom schematics & PCBs for STM32 & ESP32 projects.
+- 🌱 **Core Philosophy:** Deep understanding of core process & underlaying logic designs.
 - 🗣️ **Languages:** Vietnamese (Native), English (C1 - Proficient).
 
 ---
@@ -24,13 +24,13 @@ I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.41/10*
 ### 🔥 Featured Projects (Under Development)
 
 #### 1. [Field-Serviceable Smart Power Monitor (STM32)](https://github.com/1811htsang/Field-Serviceable-Smart-Power-Monitor-using-STM32F103C8T6.git)
-> *Challenges: No HAL libraries, Registry Manipulation, Manual Clock Configuration, Fail-Safe Handling.*
+> *Challenges: No HAL libraries, Registry Manipulation, Manual Clock Configuration, Fail-Safe Handling, PCB & Schematic Design, HIL test integration.*
 *   **Architected** a lightweight Bootloader enabling firmware updates via **UART (XMODEM)**.
 *   **Developed** GPIO, USART, IWDG, WWDG, RCC and TIM drivers from scratch using pure C and direct register access.
 *   **Analyzed** datasheets and reference manuals to configure clock trees and bus frequencies manually, ensuring precise timing for communication protocols.
 
-#### 2. [High-Frequency Data Acquisition (ESP32)](https://github.com/1811htsang/High-Frequency-Audio-Data-Acquisition-using-ESP32-WROOM-32.git)
-> *Challenges: Dual-core synchronization, 100ksps Sampling, Zero CPU overhead.*
+#### 2. [Predictive Maintenance via Acoustic Fingerprint (ESP32)](https://github.com/1811htsang/Predictive-Maintenance-via-Acoustic-Fingerprint-on-ESP32-S3.git)
+> *Challenges: Dual-core synchronization, near 100ksps Sampling, Zero CPU overhead, PCB & Schematic Design.*
 *   **Engineered** a real-time audio sampling system using **I2S & DMA**.
 *   **Orchestrated** heterogeneous multi-core processing with **FreeRTOS** (Core 0: Wi-Fi, Core 1: DSP).
 *   **Validated** signal jitter < 5µs using digital oscilloscopes.
