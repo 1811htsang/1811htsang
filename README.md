@@ -24,10 +24,13 @@ I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10*
 ### 🔥 Featured Projects (Under Development)
 
 #### 1. [Field-Serviceable Smart Power Monitor (STM32)](https://github.com/1811htsang/Field-Serviceable-Smart-Power-Monitor-using-STM32F103C8T6.git)
-> *Challenges: No HAL libraries, Registry Manipulation, Fail-Safe Handling, PCB & Schematic Design, HIL test integration.*
-*   **Architected** a lightweight Bootloader enabling firmware updates via **UART (XMODEM)**.
-*   **Developed** GPIO, UART, WWDG, RCC, TIM, SPI, I2C, EXTI, AFIO drivers from scratch using pure C and following coding standards of HAL libraries.
-*   **HIL Simulation:** Leveraged **MCP4728 DAC** with **TDA2030 OP-AMP** to simulate 3-phase voltage/current inputs, enabling safe and repeatable testing of the ADE7758 logic.
+> *Challenges: Bare-metal Optimization (64KB Flash), Class 0.5S Accuracy (IEC 62053-22), 3-Phase Industrial Simulation, Fail-safe Robustness.*
+* **Architected** a professional-grade firmware using a **Bare-metal approach** to maximize performance within a constrained **64KB Flash/20KB RAM** footprint, avoiding the overhead of HAL libraries.
+* **Developed** a dual-update strategy: A custom bootloader supporting **XMODEM-CRC** via UART for remote servicing and a **microSD-based** recovery mechanism for offline field maintenance.
+* **Engineered** a high-reliability system with a multi-layered safety net: **IWDG (LSI-based)** for hardware hangs, **WWDG** for software logic faults, and **CSS (Clock Security System)** to monitor HSE oscillator stability.
+* **Implemented** precise energy metering logic using **ADE7758**, achieving **Class 0.5S** accuracy for parameters including Vrms, Irms, Active/Reactive Power, and Power Factor across 3 phases.
+* **Designed** a Hardware-in-the-Loop (HIL) testbench using **MCP4728 (DAC)** and **TDA2030 amplifiers** to simulate industrial 3-phase signals from a single-phase source, enabling comprehensive validation without high-voltage risks.
+* **Integrated** advanced security and power features: Using **Backup Registers** for state preservation during resets, **RTC Timestamping** for data logging, and **MPU/TAMPER** for system integrity.
 
 #### 2. [Predictive Maintenance via Acoustic Fingerprint (ESP32-S3)](https://github.com/1811htsang/Predictive-Maintenance-via-Acoustic-Fingerprint-on-ESP32-S3.git)
 > *Challenges: 96kHz/24-bit High-Fidelity Sampling, Multi-layer Software Architecture, Power Management, Real-time Feature Extraction (MFCC), High-Noise Environment (80dB).*
