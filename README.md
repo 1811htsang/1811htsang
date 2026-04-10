@@ -17,23 +17,25 @@ I am currently a Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10*
 ### 🛠️ Tech Stack & Arsenal
 | Core | Hardware | Protocols | Tools |
 | :--- | :--- | :--- | :--- |
-| ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) | ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white) ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white) | ![Protocols](https://img.shields.io/badge/UART_I2C_SPI-black?style=flat) | ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-green?style=flat) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) |
+| ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![Bash](https://img.shields.io/badge/bash-%234EAA25.svg?style=flat&logo=gnu-bash&logoColor=white) | ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white) ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white) | ![Protocols](https://img.shields.io/badge/UART_I2C_SPI-black?style=flat) | ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-green?style=flat) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) |
 
 ---
 
 ### 🔥 Featured Projects (Under Development)
 
 #### 1. [Field-Serviceable Smart Power Monitor (STM32)](https://github.com/1811htsang/Field-Serviceable-Smart-Power-Monitor-using-STM32F103C8T6.git)
-> *Challenges: No HAL libraries, Registry Manipulation, Manual Clock Configuration, Fail-Safe Handling, PCB & Schematic Design, HIL test integration.*
+> *Challenges: No HAL libraries, Registry Manipulation, Fail-Safe Handling, PCB & Schematic Design, HIL test integration.*
 *   **Architected** a lightweight Bootloader enabling firmware updates via **UART (XMODEM)**.
-*   **Developed** GPIO, USART, IWDG, WWDG, RCC and TIM drivers from scratch using pure C and direct register access.
-*   **Analyzed** datasheets and reference manuals to configure clock trees and bus frequencies manually, ensuring precise timing for communication protocols.
+*   **Developed** GPIO, UART, WWDG, RCC, TIM, SPI, I2C, EXTI, AFIO drivers from scratch using pure C and following coding standards of HAL libraries.
+*   **HIL Simulation:** Leveraged **MCP4728 DAC** with **TDA2030 OP-AMP** to simulate 3-phase voltage/current inputs, enabling safe and repeatable testing of the ADE7758 logic.
 
-#### 2. [Predictive Maintenance via Acoustic Fingerprint (ESP32)](https://github.com/1811htsang/Predictive-Maintenance-via-Acoustic-Fingerprint-on-ESP32-S3.git)
-> *Challenges: Dual-core synchronization, near 100ksps Sampling, Zero CPU overhead, PCB & Schematic Design.*
-*   **Engineered** a real-time audio sampling system using **I2S & DMA**.
-*   **Orchestrated** heterogeneous multi-core processing with **FreeRTOS** (Core 0: Wi-Fi, Core 1: DSP).
-*   **Validated** signal jitter < 5µs using digital oscilloscopes.
+#### 2. [Predictive Maintenance via Acoustic Fingerprint (ESP32-S3)](https://github.com/1811htsang/Predictive-Maintenance-via-Acoustic-Fingerprint-on-ESP32-S3.git)
+> *Challenges: 96kHz/24-bit High-Fidelity Sampling, Multi-layer Software Architecture, Power Management, Real-time Feature Extraction (MFCC), High-Noise Environment (80dB).*
+* **Architected** a modular firmware using **ESP-IDF** with a 3-layer stack: **MCAL** (Hardware Abstraction), **Middleware** (DSP/Feature Extraction), and **Application** (Logic & Predictive Models).
+* **Implemented** a high-speed data acquisition pipeline using **I2S** to offload the CPU, achieving a stable **96kHz sampling rate** for precise acoustic fingerprinting.
+* **Designed** a precision **Clock Tree** utilizing an external **24.576MHz crystal** and **74HCU04** IC to provide a clean master clock for the **PCM1808 ADC**, ensuring low-jitter audio capture.
+* **Developed** a robust hardware front-end incorporating **TL072 Op-amps**, **MAX9812**, **PJ-313B**, **TCT40-16R**, and **PCM1808** to process differential signals from industrial bearings (2000 RPM reference).
+* **Engineered** power-efficient routines for battery operation (8-hour minimum) with integrated charging management and state-of-charge (SoC) monitoring.
 
 ---
 
