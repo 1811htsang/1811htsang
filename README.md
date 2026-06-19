@@ -1,27 +1,21 @@
-# Hi there, I'm Huynh Thanh Sang (Shang Huang) 👋
+# Hi there, I'm Huynh Thanh Sang (Shang Huang)
 
-### 🚀 Embedded Software / Firmware Engineer
+## Embedded Software / Firmware Engineer
 **"I specialize in designing and researching solutions for building reliable and accessible embedded systems."**
 
----
-
-### 🧐 Introduction
+## Introduction
 I am a 3rd-year Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10**). I dedicate a lot of my time to designing frameworks to support the construction of reliable, lightweight, and highly applicable embedded systems. My current goal is to perfect the μEDP event-driven programming framework and move towards developing the μE-OS event-driven operating system with features referenced and modified from Linux.
 
-- 🔭 **Current Focus:** Developing μEDP - a small single-stack non-preemptive RTC event-driven programming framework for embedded systems.
-- 🌱 **Core Philosophy:** True system control comes from understanding the synergy between bussiness logic and deterministic behaviour.
-- 🗣️ **Languages:** Vietnamese (Native), English (**IELTS 7.0** - Proficient).
+- **Current Focus:** Developing μEDP - a small single-stack non-preemptive RTC event-driven programming framework for embedded systems.
+- **Core Philosophy:** True system control comes from understanding the synergy between bussiness logic and deterministic behaviour.
+- **Languages:** Vietnamese (Native), English (**IELTS 7.0** - Proficient).
 
----
-
-### 🛠️ Tech Stack & Arsenal
-| Core | Hardware & PCB | Peripherals | Tools & Quality |
+## Tech Stack & Arsenal
+| Languages | Hardware & PCB | Peripherals | Tools & Quality |
 | :--- | :--- | :--- | :--- |
 | ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![Bash](https://img.shields.io/badge/bash-%234EAA25.svg?style=flat&logo=gnu-bash&logoColor=white) | ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat&logo=stmicroelectronics&logoColor=white) ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat&logo=espressif&logoColor=white) ![KiCad](https://img.shields.io/badge/KiCad-314E2A?style=flat&logo=kicad&logoColor=white) | ![Protocols](https://img.shields.io/badge/I2S_I2C_SPI_UART_RCC_MQTT_INTR_GPIO-black?style=flat) | ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white) ![Valgrind](https://img.shields.io/badge/Valgrind-5F3F3F?style=flat) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) |
 
----
-
-### 🔥 Featured Projects
+## Featured Projects
 
 #### 1. [μEDP](https://github.com/1811htsang/uEDP) (In progress)
 > *Challenges: Hardware-Agnosticism (Zero-Touch Porting), Real-Time Determinism, Resource Isolation under Heavy Load, Non-intrusive System Observability.*
@@ -44,9 +38,7 @@ I am a 3rd-year Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10**
 * **Integrated** a smart mechanical MUX to switch between MAX9812 & TCT40-16R sensors and PJ-342S 3.5mm audio jack for external computer connections.
 * **Implemented** a split ground plane with local bridge to remove crosstalk noise from the Wi-Fi module to the Analog area, ensuring 24-bit signal integrity.
 
----
-
-### 📫 Connect with me
+### Connect with me
 <p align="left">
 <a href="https://tinyurl.com/htsang1811-linkedin" target="blank"><img align="center" src="https://img.shields.io/badge/-Shang_Huang-blue?style=flat-square&logo=Linkedin&logoColor=white" alt="Huynh Thanh Sang" height="28" /></a>
 <a href="mailto:htsang181105work@gmail.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email-Contact_Me-c14438?style=flat-square&logo=Gmail&logoColor=white" alt="Email" height="28" /></a>
