@@ -1,15 +1,15 @@
 # Hi there, I'm Huynh Thanh Sang (Shang Huang) 👋
 
 ### 🚀 Embedded Software / Firmware Engineer
-**"I specialize in Hardware-Software Co-design, architecting reliable systems from custom event-driven kernels to high-speed mixed-signal PCB layouts."**
+**"I specialize in designing and researching solutions for building reliable and accessible embedded systems."**
 
 ---
 
 ### 🧐 About Me
-I am a 3rd-year Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10**). Guided by **First Principles Thinking**, I am passionate about bypassing abstraction layers to master the underlying logic of embedded systems. My goal is to build robust, industrial-grade products by integrating deep firmware optimization with professional hardware engineering.
+I am a 3rd-year Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10**). I dedicate a lot of my time to designing frameworks to support the construction of reliable, lightweight, and highly applicable embedded systems. My current goal is to perfect the μEDP event-driven programming framework and move towards developing the μE-OS event-driven operating system with features referenced and modified from Linux.
 
-- 🔭 **Current Focus:** Developing a core-independent event-driven kernel (CIEDPC) and high-fidelity data acquisition systems.
-- 🌱 **Core Philosophy:** True system control comes from understanding the synergy between bit-level code and electron-level signals.
+- 🔭 **Current Focus:** Developing μEDP - a small single-stack non-preemptive RTC event-driven programming framework for embedded systems.
+- 🌱 **Core Philosophy:** True system control comes from understanding the synergy between bussiness logic and deterministic behaviour.
 - 🗣️ **Languages:** Vietnamese (Native), English (**IELTS 7.0** - Proficient).
 
 ---
@@ -23,12 +23,13 @@ I am a 3rd-year Computer Engineering student at **VNUHCM-UIT** (GPA: **8.55/10**
 
 ### 🔥 Featured Projects
 
-#### 1. [CIEDPC – Custom Independent Event-Driven Programming Core](https://github.com/1811htsang/CIEDPC-Custom-Independent-Event-Driven-Programming-Core.git)
-> *Challenges: Core Portability (STM32/ESP32/Linux), Lock-free Communication, O(1) Scheduling, Memory Safety.*
-* **Designed** a core-independent framework from the simplified EPCB-vn AKEDP core, enabling 100% functional portability between STM32 for application usages and Linux for testing purposes.
-* **Implemented** deterministic Static Memory Pools to minimize RAM fragmentation with Automatic Hardware Scaling, Direct/Indirect Data-to-Message passing and a Signal Injection Bridge for safe ISR-to-Task communication.
-* **Developed** an O(1) Table-driven Transition State Machine with built-in Entry/Exit actions, reducing event-dispatching latency to a minimal number of CPU cycles.
-* **Leveraged** self-written unit tests and POSIX simulation to validate memory safety and hidden logic errors before real hardware deployment.
+#### 1. [μEDP](https://github.com/1811htsang/uEDP)
+> *Challenges: Hardware-Agnosticism (Zero-Touch Porting), Real-Time Determinism, Resource Isolation under Heavy Load, Non-intrusive System Observability.*
+* **Architected** a 3-layer decoupled framework (App-Core-PAL), enabling **"Zero-Touch Porting"** across STM32, ESP32, and Linux POSIX simulation. The core remains 100% unchanged while hardware-specific implementations are isolated in the PAL layer.
+* **Engineered** a Unified Messaging System using **Architecture-Aware Static Memory Pools** (supporting 32/64-bit adaptively). Implemented **Zero-Copy Reference Passing** and an **ISR Signal Bridge** to ensure memory safety and data integrity without dynamic allocation (malloc-free).
+* **Optimized** an O(1) Bitmask Scheduler enhanced with a **Priority Escalation** mechanism. This ensures critical task response at message boundaries, effectively mitigating task starvation in non-preemptive environments.
+* **Developed** a non-intrusive logging architecture (**Itnlog**) based on **Out-Context Execution (OCE)**. This allows high-frequency system snapshots (Task/Sig/FSM/TSM) to be recorded in nanoseconds and dumped during CPU idle time, preserving system timing and avoiding "Heisenbugs."
+* **Validated** architectural compliance against **QP/C SRS standards**, ensuring the framework meets industrial-grade requirements for Active Object patterns and deterministic event delivery.
 
 #### 2. [Field-Serviceable Smart Power Monitor (STM32)](https://github.com/1811htsang/Field-Serviceable-Smart-Power-Monitor-using-STM32F103C8T6)
 > *Challenges: Register-level Optimization, Class 0.5s Accuracy, HIL Testing, High-EMI Industrial Robustness.*
